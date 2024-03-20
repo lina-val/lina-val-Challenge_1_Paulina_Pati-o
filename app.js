@@ -25,6 +25,10 @@ function Encriptar(){
     
     document.getElementById("Texto-Encriptado").value = textoFinal;
     document.getElementById("Texto-Area").value="";
+    document.getElementById("Texto-Encriptado").style.backgroundImage = "none";
+    document.getElementById("Texto-Encriptado").style.marginTop= "90px";
+    document.getElementById("instruccion").style.opacity="0"
+    document.getElementById("instruccion").style.marginTop="-115px"
     return;  
     }
 
@@ -60,6 +64,11 @@ function Encriptar(){
         
         document.getElementById("Texto-Encriptado").value = textoFinal;
         document.getElementById("Texto-Area").value="";
+
+        document.getElementById("Texto-Encriptado").style.backgroundImage = "none";
+        document.getElementById("Texto-Encriptado").style.marginTop= "90px";
+        document.getElementById("instruccion").style.opacity="0"
+        document.getElementById("instruccion").style.marginTop="-115px"
         return;  
         }
 
@@ -67,5 +76,6 @@ function copy(){
     let copia = document.getElementById("Texto-Encriptado").select();
     document.execCommand('copy');
 }
+
 
 

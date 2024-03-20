@@ -2,13 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
 </head>
 <body>
@@ -16,33 +16,44 @@
         <img class="logo" src="img/Logo.png" alt="Logo" >
     </header>
     <main>
-        <section>
+        <section class="ingresoTexto">
 
             <textarea id="Texto-Area" class="Texto-Area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
 
-            <div>
-                <h6 class="fa"> &#xf06a; Solo letras minúsculas y sin acentos</h6>
-            </div>
+            <div class="areaBoton">
+                <div>
+                    <p style="font-size:16px" class="fa"> &#xf06a; Solo letras minúsculas y sin acentos</p>
+                </div>
 
-            <div class="Botones">
-                <button class="encriptar" onclick="Encriptar()">Encriptar</button>
-                <button class="desencriptar" onclick="Desencriptar()">Desencriptar</button>
+                <div >
+                    <button class="encriptar" onclick="Encriptar()">Encriptar</button>
+                    <button class="desencriptar" onclick="Desencriptar()">Desencriptar</button>
+                </div>
             </div>
 
         </section>
+       
 
-        <section>
+        <section class="salidaTexto">
 
-            <textarea id="Texto-Encriptado" class="Texto-Encriptado" cols="30" rows="10"></textarea>
-
-            <button onclick="copy()" class="copy">Copiar</button>
+            <textarea id="Texto-Encriptado" class="Texto-Encriptado" cols="30" rows="10">                      
+            </textarea>
+            <div id="instruccion" class="instruccion">
+                <h6>Ningún texto fue encontrado</h6> 
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            
+            <div class="copia">
+                <button onclick="copy()" class="copy">Copiar</button>
+            </div>
         
         </section>
-   
-        <footer>
-            <p> &#169; Lina Va.</p>
-        </footer>
      </main>
+     <footer>
+        <p> &#169; Lina Va.</p>
+    </footer>
     <script src="app.js" defer></script>
+    
+   
 </body>
 </html>
