@@ -17,18 +17,25 @@
     </header>
     <main>
         <section>
-            <textarea class="Texto-Area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+            <textarea id="Texto-Area" class="Texto-Area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
             <div>
                 <h6 class="fa"> &#xf06a; Solo letras minúsculas y sin acentos</h6>
             </div>
+
             <div class="Botones">
-                <button class="encriptar">Encriptar</button>
-                <button class="desencriptar">Desencriptar</button>
+                <button class="encriptar" onclick="Encriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="Desencriptar()">Desencriptar</button>
             </div>
+
         </section>
+
         <section>
-            <textarea class="Texto-Encriptado" cols="30" rows="10"></textarea>
-            <button class="copy">Copiar</button>
+
+            <textarea id="Texto-Encriptado" class="Texto-Encriptado" cols="30" rows="10"></textarea>
+
+            <button onclick="copy()" class="copy">Copiar</button>
         
         </section>
    
