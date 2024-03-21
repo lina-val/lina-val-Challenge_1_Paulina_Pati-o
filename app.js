@@ -67,8 +67,10 @@ function Encriptar(){
 
         document.getElementById("Texto-Encriptado").style.backgroundImage = "none";
         document.getElementById("Texto-Encriptado").style.marginTop= "90px";
-        document.getElementById("instruccion").style.opacity="0"
-        document.getElementById("instruccion").style.marginTop="-115px"
+        document.getElementById("instruccion").style.opacity="0";
+        document.getElementById("instruccion").style.marginTop="-115px";
+        document.getElementById('instruccion').style.position="relative";
+        
         return;  
         }
 
